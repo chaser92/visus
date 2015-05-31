@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+    <script src="dlab.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h2>ViSUS</h2>
+    <label for="datafile">File:</label>
+    <input type="file" name="datafile" onChange="doProcess(this.files)">
+    <button id="process" onclick="next();" class="btn btn-primary" >Next</button>
+    <h2>Decision: <span id="dec"></span></h2>
+    <h3>Left Leg Acc</h3>
+    <div id="lla" height="1000"></div>
+    <h3>Left Leg Gyro</h3>
+    <div id="llg" height="1000"></div>
+    <h3>Right Leg Acc</h3>
+    <div id="rla" height="1000" ></div>
+    <h3>Right Leg Gyro</h3>
+    <div id="rlg" height="1000" ></div>
+    <h3>Left Hand Acc</h3>
+    <div id="lha" height="1000"></div>
+    <h3>Left Hand Gyro</h3>
+    <div id="lhg" height="1000"></div>
+    <h3>Right Hand Acc</h3>
+    <div id="rha" height="1000"></div>
+    <h3>Right Hand Gyro</h3>
+    <div id="rhg" height="1000"></div>
+    <h3>Left Arm Acc</h3>
+    <div id="laa" height="1000"></div>
+    <h3>Left Arm Gyro</h3>
+    <div id="lag" height="1000"></div>
+    <h3>Right Arm Acc</h3>
+    <div id="raa" height="1000"></div>
+    <h3>Right Arm Gyro</h3>
+    <div id="rag" height="1000"></div>    
+    <h3>Torso Acc</h3>
+    <div id="torsoa" height="1000"></div>
+    <h3>Torso Gyro</h3>
+    <div id="torsog" height="1000"></div>
+  </body>
+</html>
